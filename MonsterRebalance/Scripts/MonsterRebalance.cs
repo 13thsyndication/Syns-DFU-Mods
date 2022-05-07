@@ -139,39 +139,41 @@ namespace MonsterRebalance
             (   // Giant Bat
                 id: 3,
                 minDmg: 1, maxDmg: 4,
-                minHp: 5, maxHp: 15,                                                              
+                minHp: 5, maxHp: 15                                                              
                 //moveSnd: (int)SoundClips.EnemyGiantMove  // <- example of setting a level and a sound clip.
             ),
+            new EnemyData
             (   // Harpy
                 id: 13,
-                minMetalToHit: WeaponMaterialTypes.Silver,
+                minMetalToHit: WeaponMaterialTypes.Silver
             ),
             new EnemyData
             (   // Zombie
                 id: 17,
-                minDmg: 1, maxDmg: 5,
+                minDmg: 1, maxDmg: 5
             ),
             new EnemyData
             (   //Gargoyle
                 id: 22,
-                minMetalToHit: WeaponMaterialTypes.Dwarven,
+                minMetalToHit: WeaponMaterialTypes.Dwarven
             ),
             new EnemyData
             (   //Frost Daedra
                 id: 25,
                 minDmg: 15, maxDmg: 50,
-                minHp: 25, maxHp: 130,
+                minHp: 25, maxHp: 130
             ),
             new EnemyData
             (   //Daedroth
                 id: 27,
                 minDmg: 10, maxDmg: 30,
-                minMetalToHit: WeaponMaterialTypes.Dwarven,
+                minMetalToHit: WeaponMaterialTypes.Dwarven
             ),
             new EnemyData
             (   //Daedra Lord
                 id: 31,
-                minDmg: 20, maxDmg: 70,
+                minDmg: 20, maxDmg: 70
             ),
-        }      
-    }}
+        };    
+    }
+}
