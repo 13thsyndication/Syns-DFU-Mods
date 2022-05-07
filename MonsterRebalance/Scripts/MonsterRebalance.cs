@@ -18,7 +18,10 @@ namespace MonsterRebalance
         [Invoke(StateManager.StateTypes.Start, 0)]
         public static void Init(InitParams initParams)
         {
-
+            mod = initParams.Mod;
+            var go = new GameObject(mod.Title);
+            go.AddComponent<MonsterRebalance>();
+        }
         void Awake()
         {
             InitMod();
@@ -77,7 +80,7 @@ namespace MonsterRebalance
         public static int CorpseTexture(int archive, int record)
         {
             return ((archive << 16) + record);
-        }}
+        }
 
         private class EnemyData
         {
@@ -171,5 +174,4 @@ namespace MonsterRebalance
                 minDmg: 20, maxDmg: 70,
             ),
         }      
-    }
-}
+    }}
