@@ -1,0 +1,11 @@
+{
+    "ModTitle": "Monster Rebalance",
+    "ModVersion": "0.1",
+    "ModAuthor": "13thSyndicate",
+    "DFUnity_Version": "0.14.0",
+    "ModDescription": "Rebalances monsters",
+    "GUID": "9d2496a5-63ec-438e-9aa9-1855fe5adb8f",
+    "Files": [
+        "Assets/Game/Mods/MonsterRebalance/Scripts/MonsterRebalance.cs"
+    ]
+}
