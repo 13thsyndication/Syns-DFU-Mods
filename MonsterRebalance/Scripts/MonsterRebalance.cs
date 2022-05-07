@@ -6,6 +6,7 @@
 using DaggerfallWorkshop;
 using DaggerfallWorkshop.Game;
 using DaggerfallWorkshop.Game.Utility.ModSupport;
+using DaggerfallWorkshop.Game.Items;
 using DaggerfallWorkshop.Utility;
 using UnityEngine;
 
@@ -71,7 +72,7 @@ namespace MonsterRebalance
                 if (mobData.CorpseTex != -1)
                     EnemyBasics.Enemies[mobData.ID].CorpseTexture = mobData.CorpseTex;
                 if (mobData.MinMetalToHit != -1)
-                    EnemyBasics.Enemies[mobData.ID].MinMetalToHit = mobData.MinMetalToHit;
+                    EnemyBasics.Enemies[mobData.ID].MinMetalToHit = (WeaponMaterialTypes)mobData.MinMetalToHit;
             }
 
             Debug.Log("Finished mod init: MonsterRebalance");
@@ -145,7 +146,7 @@ namespace MonsterRebalance
             new EnemyData
             (   // Harpy
                 id: 13,
-                minMetalToHit: WeaponMaterialTypes.Silver
+                minMetalToHit: (int)WeaponMaterialTypes.Silver
             ),
             new EnemyData
             (   // Zombie
@@ -155,7 +156,7 @@ namespace MonsterRebalance
             new EnemyData
             (   //Gargoyle
                 id: 22,
-                minMetalToHit: WeaponMaterialTypes.Dwarven
+                minMetalToHit: (int)WeaponMaterialTypes.Dwarven
             ),
             new EnemyData
             (   //Frost Daedra
@@ -167,7 +168,7 @@ namespace MonsterRebalance
             (   //Daedroth
                 id: 27,
                 minDmg: 10, maxDmg: 30,
-                minMetalToHit: WeaponMaterialTypes.Dwarven
+                minMetalToHit: (int)WeaponMaterialTypes.Dwarven
             ),
             new EnemyData
             (   //Daedra Lord
